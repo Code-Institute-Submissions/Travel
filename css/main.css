@@ -15,11 +15,11 @@ a, a:hover, a:focus {
 }
 
 .navbar {
-  padding: 15px 10px;
+  width: 90px;
+  padding: 20px 10px;
   background: #fff;
   border: none;
   border-radius: 0;
-  margin-bottom: 40px;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -36,14 +36,37 @@ a, a:hover, a:focus {
   margin: 40px 0;
 }
 
+/* --------------------------------------------------
+Map
+-----------------------------------------------------*/
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
 .wrapper {
   display: flex;
-  width: 100%;
   align-items: stretch;
   perspective: 1500px;
+  background-color: #263238;
+}
+
+#findInLocation {
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative;
+  height: 40px;
+  width: 200px;
+  margin: 10px 10px;
+}
+
+#locationField {
+  padding: 5px;
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative;
+  height: 40px;
+  width: 200px;
+  margin: 10px 10px;
 }
 
 #sidebar {
@@ -91,6 +114,7 @@ a, a:hover, a:focus {
   -moz-transition: all 0.3s;
   transition: all 0.3s;
 }
+
 /* ---------------------------------------------------
     Icons
 ----------------------------------------------------- */
@@ -100,6 +124,7 @@ a, a:hover, a:focus {
   top: 9px;
   font-size: 30px;
 }
+
 /* ---------------------------------------------------
     Icons
 ----------------------------------------------------- */
@@ -108,12 +133,13 @@ a, a:hover, a:focus {
   font-size: 25px;
 }
 
-
 /* ---------------------------------------------------
     CONTENT STYLE X
 ----------------------------------------------------- */
 #content {
-  padding: 20px;
+  background-color: #37474f;
+  width: 100%;
+  padding: 2px;
   min-height: 100vh;
   transition: all 0.3s;
 }
@@ -130,7 +156,7 @@ a, a:hover, a:focus {
   height: 2px;
   margin: 0 auto;
   display: block;
-  background: #555;
+  background: #607d8b;
   transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
   transition-delay: 0.2s;
 }
@@ -151,6 +177,15 @@ a, a:hover, a:focus {
   transform: none;
   opacity: 1;
   margin: 5px auto;
+}
+
+/* ---------------------------------------------------
+    MAPS
+----------------------------------------------------- */
+#map {
+  height: 94%;
+  margin: 10;
+  padding: 0;
 }
 
 /* ---------------------------------------------------

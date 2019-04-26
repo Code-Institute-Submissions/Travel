@@ -1,6 +1,3 @@
-/*
-Side bar JS
-*/
 
 $(document).ready(function() {
   $('#sidebarCollapse').on('click', function() {
