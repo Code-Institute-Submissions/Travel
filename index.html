@@ -1,20 +1,15 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-
   <title>Travel</title>
-
   <!-- Bootstrap CSS CDN -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-  <!-- Our Custom CSS -->
-  <link rel="stylesheet" href="../css/main.css">
-
+  <!--  Custom CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
   <!-- Font Awesome JS -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
@@ -22,18 +17,13 @@
 </head>
 
 <body>
-
+  <!--                                 start side nav -->
   <div class="wrapper">
-
-    <!-- Sidebar Holder -->
     <nav id="sidebar">
       <div class="sidebar-header">
-        <h3>Travel</h3>
+        <a href="index.html">Travel</a>
       </div>
-
       <ul class="list-unstyled components">
-        <!-- search bar -->
-
         <div id="controls">
           <select id="country">
             <option value="all">All</option>
@@ -52,37 +42,28 @@
             <option value="uk">United Kingdom</option>
           </select>
         </div>
-
+        <!--                                 search autocomplete box -->
         <div class="sidenav">
           <div id="locationField">
             <input id="autocomplete" placeholder="Enter a city" type="text" />
           </div>
         </div>
-        <!-- end search bar -->
-
-        <!--  search section -->
+        <!--                         search location box -->
         <div id="findInLocation">
           Find in your location:
         </div>
-
         <div class="search-section">
-
           <button class="btn btn-primary"><i class="fa fa-bed icon" aria-hidden="true"></i>Hotel</button>
-
           <button class="btn btn-danger"><i class="fa fa-utensils icon" aria-hidden="true"></i>Restaurant</button>
-
           <button class="btn btn-info"><i class="fa fa-university icon" aria-hidden="true"></i>Attractions</button>
-
           <button class="btn btn-success"><i class="fa fa-glass-martini icon" aria-hidden="true"></i>Party</button>
-
         </div>
-
+        <!--                          details desplaied on the map about the location -->
         <div id="listing">
           <table id="resultsTable">
             <tbody id="results"></tbody>
           </table>
         </div>
-
         <div style="display: none">
           <div id="info-content">
             <table>
@@ -109,16 +90,9 @@
             </table>
           </div>
         </div>
-
       </ul>
     </nav>
-    <!-- end search section -->
-    <!-- list -->
-
-
-    <!-- end list -->
-
-    <!-- Page Content Holder -->
+    <!--                                    sidebarCollapse -->
     <section id="content">
       <nav class="navbar navbar-expand-lg navbar-light bg-dark">
         <div class="container-fluid">
@@ -131,16 +105,15 @@
           </div>
         </div>
       </nav>
+      <!--                                        map -->
       <div id="map"></div>
     </section>
-
     <section>
-      <script type="text/javascript" src="../js/maps.js"></script>
+      <script type="text/javascript" src="assets/js/maps.js"></script>
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCysDUdKiBj_YrsFr65-rA7sZ9Lof3zCN4&libraries=places&callback=initMap" async defer></script>
     </section>
-
   </div>
-
+  <!--                                   end -->
 
 
 
@@ -150,8 +123,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
   <!-- Bootstrap JS -->
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="../js/nav.js"></script>
-
+  <script type="text/javascript" src="assets/js/nav.js"></script>
 </body>
 
 </html>

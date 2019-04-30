@@ -25,7 +25,7 @@ var map, places, infoWindow;
         },
         'de': {
           center: {lat: 51.2, lng: 10.4},
-          zoom: 5
+          zoom: 7
         },
         'mx': {
           center: {lat: 23.6, lng: -102.5},
@@ -67,7 +67,7 @@ var map, places, infoWindow;
             lat: 51.2,
             lng: 10.4
           },
-          zoom: 12,
+          zoom: 5,
           styles: [{
               elementType: 'geometry',
               stylers: [{
@@ -299,7 +299,7 @@ function addResult(result, i) {
   var markerIcon = MARKER_PATH + markerLetter + '.png';
 
   var tr = document.createElement('tr');
-  tr.style.backgroundColor = (i % 2 === 0 ? '#F0F0F0' : '#FFFFFF');
+  tr.style.backgroundColor = (i % 2 === 0 ? '#37474f' : '#455a64');
   tr.onclick = function() {
     google.maps.event.trigger(markers[i], 'click');
   };
