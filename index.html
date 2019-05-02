@@ -53,11 +53,27 @@
           Find in your location:
         </div>
         <div class="search-section">
-          <button class="btn btn-primary"><i class="fa fa-bed icon" aria-hidden="true"></i>Hotel</button>
-          <button class="btn btn-danger"><i class="fa fa-utensils icon" aria-hidden="true"></i>Restaurant</button>
-          <button class="btn btn-info"><i class="fa fa-university icon" aria-hidden="true"></i>Attractions</button>
-          <button class="btn btn-success"><i class="fa fa-glass-martini icon" aria-hidden="true"></i>Party</button>
+          <div id="places">
+            <form class="container-fluid">
+
+              <input onchange="search()" type="radio" id="lodging" name="option" checked="checked" />
+              <label class="btn btn-primary" for="lodging">Hotel</label>
+
+              <input onchange="search()" type="radio" id="museum" name="option" />
+              <label class="btn btn-info" for="museum">Museum</label>
+
+              <input onchange="search()" type="radio" id="restaurant" name="option" />
+              <label class="btn btn-success" for="restaurant">Restaurant</label>
+
+              <input onchange="search()" type="radio" id="bar" name="option" />
+              <label class="btn btn-warning" for="bar">Bar</label>
+
+              <input onchange="search()" type="radio" id="night_club" name="option" />
+              <label class="btn btn-danger" for="night_club">Night club</label>
+            </form>
+          </div>
         </div>
+
         <!--                          details desplaied on the map about the location -->
         <div id="listing">
           <table id="resultsTable">

@@ -230,9 +230,24 @@ var map, places, infoWindow;
 
 // Search for hotels in the selected city, within the viewport of the map.
 function search() {
-  var search = {
-    bounds: map.getBounds(),
-    types: ['lodging']
+  let poi = 'lodging'; //poi = point of interest
+  clearMarkers();
+  markers = [];
+  if (document.getElementById("museum").checked) poi = 'museum';
+  clearMarkers();
+  markers = [];
+  if (document.getElementById("restaurant").checked) poi = 'restaurant';
+  clearMarkers();
+  markers = [];
+  if (document.getElementById("bar").checked) poi = 'bar';
+  clearMarkers();
+  markers = [];
+  if (document.getElementById("night_club").checked) poi = 'night_club';
+  clearMarkers();
+  markers = [];
+  let search = {
+   bounds: map.getBounds(),
+   types: [poi]
   };
 
   places.nearbySearch(search, function(results, status) {
