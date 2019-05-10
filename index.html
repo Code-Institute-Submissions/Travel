@@ -12,7 +12,6 @@
   <!-- Font Awesome JS -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
@@ -20,7 +19,7 @@
   <div class="wrapper">
     <nav id="sidebar">
       <div class="sidebar-header">
-        <a href="index.html">Travel</a>
+        <a class="text-left" href="index.html">Travel</a>
       </div>
       <ul class="list-unstyled components">
         <div id="controls">
@@ -55,20 +54,20 @@
           <div id="places">
             <form class="container-fluid">
 
-              <input onchange="search()" type="radio" id="lodging" name="option" checked="checked" />
-              <label class="btn btn-primary" for="lodging">Hotel</label>
+              <input onchange="search()" type="radio" id="lodging" name="option" />
+              <label class="btn btn-hotel" for="lodging">Hotel</label>
 
               <input onchange="search()" type="radio" id="museum" name="option" />
-              <label class="btn btn-info" for="museum">Museum</label>
+              <label class="btn btn-museum" for="museum">Museum</label>
 
               <input onchange="search()" type="radio" id="restaurant" name="option" />
-              <label class="btn btn-success" for="restaurant">Restaurant</label>
+              <label class="btn btn-restaurant" for="restaurant">Restaurant</label>
 
               <input onchange="search()" type="radio" id="bar" name="option" />
-              <label class="btn btn-warning" for="bar">Bar</label>
+              <label class="btn btn-bar" for="bar">Bar</label>
 
               <input onchange="search()" type="radio" id="night_club" name="option" />
-              <label class="btn btn-danger" for="night_club">Night club</label>
+              <label class="btn btn-night_club" for="night_club">Night club</label>
             </form>
           </div>
         </div>
@@ -140,5 +139,4 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
   <script type="text/javascript" src="assets/js/nav.js"></script>
 </body>
-
 </html>

@@ -48,19 +48,20 @@
 
 #controls {
   position: absolute;
-  top: 90px;
+  top: 110px;
   left: 15px;
-  width: 140px;
+  width: 178px;
   z-index: 5;
   background-color: #fff;
 }
-
+#country {
+  width: 178px;
+}
 #findInLocation {
-  padding: 10px;
+  margin: 10px;
   text-transform: uppercase;
   font-weight: 300;
   position: relative;
-  height: 40px;
   width: 200px;
   margin: 10px 10px;
 }
@@ -93,13 +94,32 @@
 }
 
 #sidebar .sidebar-header {
-  padding: 20px;
   background: #37474f;
+  text-decoration: none;
 }
+
+.text-left {
+  font-size: 45px;
+  text-decoration: none;
+  color: white;
+  padding: 14px 25px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+ }
+ a:hover, a:active {
+   text-decoration: none;
+   color: white;
+
+ }
 
 #sidebar ul.components {
   padding: 30px 0;
   border-bottom: 2px solid #47748b;
+}
+
+ {
+float: right;
 }
 
 /* ---------------------------------------------------
@@ -194,53 +214,29 @@
 #lodging {
   opacity: 0;
 }
-
 #museum {
   opacity: 0;
 }
-
 #restaurant {
   opacity: 0;
 }
-
 #bar {
   opacity: 0;
 }
-
 #night_club {
   opacity: 0;
 }
 
-.btn-danger {
-  background: none;
+.btn-hotel {
   border: none;
   width: 200px;
   padding: 10px;
   text-transform: uppercase;
   margin: 10px;
-  transition: colo 0.4s linear;
+  transition: color 0.4s linear;
 }
 
-.btn-danger:hover {
-  background-color: #760c16;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.btn-primary {
-  background: none;
-  border: none;
-  width: 200px;
-  padding: 10px;
-  text-transform: uppercase;
-  margin: 10px;
-  transition: colo 0.4s linear;
-}
-
-.btn-primary:hover {
+.btn-hotel:hover {
   background-color: #45b3e0;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -249,7 +245,13 @@
   transition: all 0.3s;
 }
 
-.btn-info {
+
+
+
+
+
+
+.btn-museum {
   background: none;
   border: none;
   width: 200px;
@@ -259,7 +261,7 @@
   transition: colo 0.4s linear;
 }
 
-.btn-info:hover {
+.btn-museum:hover {
   background-color: #ffae19;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
@@ -268,7 +270,37 @@
   transition: all 0.3s;
 }
 
-.btn-warning {
+
+
+
+
+
+.btn-restaurant {
+  background: none;
+  border: none;
+  width: 200px;
+  padding: 10px;
+  text-transform: uppercase;
+  margin: 10px;
+  transition: colo 0.4s linear;
+}
+
+.btn-restaurant:hover {
+  background-color: #800040;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+
+
+
+
+
+
+.btn-bar {
   background: none;
   border: none;
   color: #fff;
@@ -279,7 +311,7 @@
   transition: colo 0.4s linear;
 }
 
-.btn-warning:hover {
+.btn-bar:hover {
   color: #fff;
   background-color: #003366;
   -webkit-transition: all 0.3s;
@@ -289,7 +321,16 @@
   transition: all 0.3s;
 }
 
-.btn-success {
+
+
+
+
+
+
+
+
+
+.btn-night_club {
   background: none;
   border: none;
   width: 200px;
@@ -299,8 +340,8 @@
   transition: colo 0.4s linear;
 }
 
-.btn-success:hover {
-  background-color: #800040;
+.btn-night_club:hover {
+  background-color: #760c16;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -o-transition: all 0.3s;
@@ -308,13 +349,25 @@
   transition: all 0.3s;
 }
 
+.btn-active {
+  background: grey;
+}
+
+
 #listing {
-  max-height: 200px;
+  width: 300px;
+  overflow-y: auto;
+  height: 600px;
 }
 
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */
+@media (max-width: 768px) {
+  #listing {
+    height: 250px;
+  }
+
 @media (max-width: 768px) {
   #sidebar {
     margin-left: -280px;
