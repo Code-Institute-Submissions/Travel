@@ -7,7 +7,7 @@ museums, restaurants, bars and if you want take it to the next level, night club
 ## Demo
 A live demo can be found [here](https://davidcolds.github.io/Travel/).
 
-![Desktop Demo](https://raw.githubusercontent.com/DavidColds/Travel/blob/master/assets/gif/travel.gif "Desktop Demo")
+![Recording3 (1)](https://user-images.githubusercontent.com/44336390/58486806-d7485580-8166-11e9-9c0a-7d93dc1aecef.gif)
 
 ## UX
 My goal in the design is to make it as easy as possible to search the location you need while containing a clan and minimalistic design.
