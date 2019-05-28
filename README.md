@@ -72,7 +72,7 @@ The greyscale color scheme was chosen to create a sleek and modern feel.
 All links will open in a new tab using target=blank
 This site was tested across multiple browsers (Chrome, Safari, Internet Explorer, FireFox) and on multiple mobile devices (iPhone 4, 5, 7: Chrome and Safari, iPad, Samsung Galaxy) to ensure compatibility and responsiveness. During the testing phase
 
--	The code has been written and tested in Cloud9 and Google Chrome Developer Tools.  
+-	The code has been written and tested in Atom code editor and Google Chrome Developer Tools.  
 -	[HTML]( https://validator.w3.org/) code has been tested with mark-up validation service.  
 -	[CSS](https://jigsaw.w3.org/css-validator/) code has been tested with  CSS validation service.  
 -	[Javascript](https://www.jslint.com/) and jQuery code has been tested using JSLint.
