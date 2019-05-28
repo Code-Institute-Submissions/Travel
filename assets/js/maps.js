@@ -358,8 +358,12 @@ function showInfoWindow() {
 function buildIWContent(place) {
   document.getElementById('iw-icon').innerHTML = '<img class="hotelIcon" ' +
       'src="' + place.icon + '"/>';
-  document.getElementById('iw-url').innerHTML = '<b><a href="' + place.url +
+  document.getElementById('iw-url').innerHTML = '<b><a target="_blank" href="' + place.url +
       '">' + place.name + '</a></b>';
+  document.getElementById('websiteLink').innerHTML = '<b><a target="_blank" href="' +
+  website + '">' + website + '</a></b>';
+
+
   document.getElementById('iw-address').textContent = place.vicinity;
 
   if (place.formatted_phone_number) {
@@ -372,6 +376,7 @@ function buildIWContent(place) {
 
   // Assign a five-star rating to the hotel, using a black star ('&#10029;')
   // to indicate the rating the hotel has earned, and a white star ('&#10025;')
+  // for the rating points not achieved.
   if (place.rating) {
     var ratingHtml = '';
     for (var i = 0; i < 5; i++) {
@@ -392,12 +397,15 @@ function buildIWContent(place) {
   if (place.website) {
     var fullUrl = place.website;
     var website = hostnameRegexp.exec(place.website);
+
+
     if (website === null) {
       website = 'http://' + place.website + '/';
       fullUrl = website;
     }
+    var websiteLink = '<b><a target="_blank" href="' + website + '">' + website + '</a></b>';
     document.getElementById('iw-website-row').style.display = '';
-    document.getElementById('iw-website').textContent = website;
+    document.getElementById('websiteLink').innerHTML = websiteLink;
   } else {
     document.getElementById('iw-website-row').style.display = 'none';
   }
