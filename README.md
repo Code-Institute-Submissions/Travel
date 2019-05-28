@@ -6,6 +6,6 @@ museums, restaurants, bars and even night clubs. The information window contains
 ## Demo
 A live demo can be found [here](https://davidcolds.github.io/Travel/).
 
-![Desktop Demo](https://raw.githubusercontent.com/DavidColds/Travel/blob/master/assets/gif/travel.gif "Desktop Demo")
+![3224qb](https://user-images.githubusercontent.com/44336390/58486478-3e193f00-8166-11e9-89a3-dd82233ac4a1.gif)
 
 ## UX
