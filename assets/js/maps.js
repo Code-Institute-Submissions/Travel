@@ -398,7 +398,6 @@ function buildIWContent(place) {
     var fullUrl = place.website;
     var website = hostnameRegexp.exec(place.website);
 
-
     if (website === null) {
       website = 'http://' + place.website + '/';
       fullUrl = website;
