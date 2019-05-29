@@ -10,7 +10,7 @@ A live demo can be found [here](https://davidcolds.github.io/Travel/).
 ![Recording3 (1)](https://user-images.githubusercontent.com/44336390/58486806-d7485580-8166-11e9-9c0a-7d93dc1aecef.gif)
 
 ## UX
-My goal in the design is to make it as easy as possible to search the location you need while containing a clan and minimalistic design.
+My goal in the design is to make it as easy as possible to search the location you need while containing a clean and minimalistic design.
 The greyscale color scheme was chosen to create a sleek and modern feel.
 
 ## User Stories
@@ -49,7 +49,7 @@ The greyscale color scheme was chosen to create a sleek and modern feel.
 
 ## Features left to implement
 
-- For the app to access users local gps and use users loculation.
+- For the app to access users local gps and use users localation.
 
 ## Technologies Used
 
