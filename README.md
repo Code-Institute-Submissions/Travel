@@ -33,6 +33,8 @@ The greyscale color scheme was chosen to create a sleek and modern feel.
 
 ## Wireframes
 
+The wireframes were made in AdobeXD. 
+
 ![frameworks](https://user-images.githubusercontent.com/44336390/58497006-4c258a80-817b-11e9-9376-40ad16b771a0.jpg)
 
 
